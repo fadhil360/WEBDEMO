@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendulum Simulation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <aside class="controls">
+        <label for="length">Pendulum Length:</label>
+        <input type="range" id="length" min="50" max="300" value="200" />
+        <label>Velocity X:</label>
+        <div id="Velx" class="box">0</div>
+        <label>Velocity Y:</label>
+        <div id="Vely" class="box">0</div>
+        <label for="GR">Gravity:</label>
+        <div id="gravityBox" class="box">0.98</div>
+        <input type="range" id="GR" min="0" max="10" step="0.01" value="0.98" />
+        <button id="reset" class="styledButton" type="button">Reset</button>
+        <button id="cut" class="styledButton" type="button">Cut</button>
+      </aside>
+
+      <canvas id="pendulumCanvas" width="700" height="400"></canvas>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
